@@ -11,7 +11,7 @@ describe('Orange HRM Tests', () => {
 
   it('Login - Failed', () => {
     cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
-      cy.get('[name="username"]').type('Admin2')
+    cy.get('[name="username"]').type('Admin2')
     cy.get('[name="password"]').type('admin1234')
     cy.get('.oxd-button').click()
     cy.get('.oxd-alert')
